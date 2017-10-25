@@ -11,7 +11,7 @@
 					$title = $term->name;
 				?>
 				<div class="wrap-page-title">
-					<h1 class="page-title page-title__pagination"><?php echo $title ?></h1>
+					<h1 class="page-title page-title__pagination"><span class="first-letter" role="presentation" aria-hidden="true">P</span><?php echo $title ?></h1>
 				</div>
 
 				<?php wp_pagenavi( array( 'before' => '<div class="top-pagination">', 'after' => '</div>' ) ); ?>
