@@ -131,8 +131,7 @@ figure  {
 	padding-left: 30px;
 }
 
-.page-title:before {
-	content: "P";
+.first-letter {
 	opacity: 0.4;
 	font-family: Sacramento-Regular;
 	font-size: 120px;
@@ -198,6 +197,8 @@ figure  {
 	display: block;
 	line-height: 18px;
 	margin: 5px 10px;
+	border-bottom: solid 2px transparent;
+
 }
 
 .main-nav a:hover,
@@ -331,6 +332,7 @@ ol.bjqs-markers a:focus {
 .cat-nav a {
 	display: block;
 	color: rgba(0,0,0,0.4);
+	border-bottom: solid 2px transparent;
 }
 
 .cat-nav a:hover,
