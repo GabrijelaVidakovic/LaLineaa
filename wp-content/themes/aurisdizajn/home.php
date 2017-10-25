@@ -24,7 +24,7 @@
 					</li>
 				</ul>
 			</div>
-			<h1 class="page-title">Pozivnice La Linea</h1>
+			<h1 class="page-title"><span class="first-letter" role="presentation" aria-hidden="true">P</span>Pozivnice La Linea</h1>
 			<div class="article-body">
 				<?php the_content(); ?>
 			</div>
