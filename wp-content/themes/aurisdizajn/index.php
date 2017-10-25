@@ -1,0 +1,1 @@
+<?php // ne koristi se; naslovnica koristi home.php - page template ?>

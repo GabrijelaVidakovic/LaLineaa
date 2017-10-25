@@ -1,0 +1,24 @@
+# Redirect old categories
+RewriteRule proizvodi/pozivnice/$ kategorija/pozivnice/ [R=301,L]
+RewriteRule proizvodi/zahvalnice/$ kategorija/zahvalnice/ [R=301,L]
+RewriteRule proizvodi/reverinarukvice/$ kategorija/reverinarukvice/ [R=301,L]
+RewriteRule proizvodi/kompleti/$ kategorija/kompleti/ [R=301,L]
+RewriteRule proizvodi/knjige-gostiju/$ kategorija/knjige-gostiju/ [R=301,L]
+RewriteRule proizvodi/konfeti/$ kategorija/konfeti/ [R=301,L]
+RewriteRule proizvodi/naljepnice-za-vino/$ kategorija/naljepnice-za-vino/ [R=301,L]
+RewriteRule proizvodi/kutije-za-kolace/$ kategorija/kutije-za-kolace/ [R=301,L]
+RewriteRule proizvodi/raspored-sjedenja/$ kategorija/raspored-sjedenja/ [R=301,L]
+RewriteRule proizvodi/jelovnici/$ kategorija/jelovnici/ [R=301,L]
+RewriteRule proizvodi/ostalo/$ kategorija/ostalo/ [R=301,L]
+
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress

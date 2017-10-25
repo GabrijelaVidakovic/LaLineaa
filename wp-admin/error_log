@@ -1,0 +1,3 @@
+[20-Oct-2017 10:05:44 UTC] PHP Notice:  Undefined offset: 1 in /home/aurisdiz/public_html/pozivnicelalinea.com/wp-admin/includes/dashboard.php on line 1227
+[20-Oct-2017 10:05:54 UTC] PHP Notice:  Trying to get property of non-object in /home/aurisdiz/public_html/pozivnicelalinea.com/wp-content/themes/aurisdizajn/functions.php on line 29
+[20-Oct-2017 10:05:54 UTC] PHP Notice:  Trying to get property of non-object in /home/aurisdiz/public_html/pozivnicelalinea.com/wp-content/themes/aurisdizajn/functions.php on line 29
