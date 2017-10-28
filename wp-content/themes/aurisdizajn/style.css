@@ -94,6 +94,26 @@ figure  {
 	background-color: #b3d4fC;
 }
 
+@font-face {
+    font-family: Sacramento-Regular;
+    src: url(/wp-content/themes/aurisdizajn/fonts/Sacramento-Regular.ttf);
+}
+
+@font-face {
+    font-family: OldStandardTT-Regular;
+    src: url(/wp-content/themes/aurisdizajn/fonts/OldStandard-Regular.ttf);
+}
+
+@font-face {
+    font-family: HKGrotesk-Regular;
+    src: url(/wp-content/themes/aurisdizajn/fonts/HKGrotesk-Regular.otf);
+}
+
+@font-face {
+    font-family: HKGrotesk-Medium;
+    src: url(/wp-content/themes/aurisdizajn/fonts/HKGrotesk-Medium.otf);
+}
+
 /* generic */
 
 .cf:after {
@@ -445,6 +465,7 @@ ol.bjqs-markers a:focus {
 	margin: 0 20px;
 	vertical-align: middle;
     line-height: 60px;
+    font-family: HKGrotesk-Medium;
 }
 
 .single-product .meta .label {
@@ -606,6 +627,7 @@ ol.bjqs-markers a:focus {
 	overflow-x: hidden;
 	font-size: 18px;
 	color: #000;
+	font-family: HKGrotesk-Medium;
 }
 
 .product-list .list .img-wrap {
