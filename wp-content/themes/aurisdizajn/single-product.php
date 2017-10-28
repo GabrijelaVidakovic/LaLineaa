@@ -23,7 +23,7 @@
 					</li>
 				</ul>
 			</div>
-			<!-- <h1 class="page-title"><span class="first-letter" role="presentation" aria-hidden="true">P</span><?php the_title(); ?></h1> -->
+
 			<div class="product-body">
 				<h1 class="page-title"><span class="first-letter" role="presentation" aria-hidden="true">P</span><?php the_title(); ?></h1>
 				<?php
