@@ -118,15 +118,16 @@ figure  {
 
 .inner {
 	margin: 0 auto;
-	padding: 0 100px;
+	padding: 0 10px;
 	max-width: 1440px;
 	overflow: hidden;
+	box-sizing: border-box;
 }
 
 .page-title,
 .box-title {
 	font-weight: normal;
-	font-family: OldStandardTT-Regular;
+	margin-top: 50px;
 	font-size: 26px;
 }
 
@@ -174,7 +175,7 @@ figure  {
 }
 
 .main-nav {
-	float: right;
+	float: none;
 }
 
 .main-nav ul {
@@ -207,12 +208,12 @@ figure  {
 	border-bottom: solid 2px #EFCABE;
 }
 
-.main {
+/*.main {
 	padding: 20px 20px 10px;
-}
+}*/
 
 .carousel {
-	margin: 15px 80px;
+	margin: 15px -10px 0;
 }
 
 .carousel img {
@@ -385,9 +386,6 @@ ol.bjqs-markers a:focus {
 }
 
 .single-product .product-body .price-inner {
-/*	border-top: 1px solid #fff;
-*/	/*margin-top: 10px;
-	padding-top: 10px;*/
 	float: right;
 	background: url(images/price-box.png) no-repeat;
     width: 176px;
@@ -978,12 +976,10 @@ ol.bjqs-markers a:focus {
 
 @media only screen and (min-width: 768px) {
 
-	.header {
-		/*padding-left: 235px;*/
-		margin: 100px 0;
-		text-align: left;
-	}
 
+	.main-nav {
+		float: right;
+	}
 	.main-nav ul {
 		display: inline-block;
 		padding: 15px 25px;
@@ -1018,11 +1014,10 @@ ol.bjqs-markers a:focus {
 		-webkit-border-radius: 20px;
 		-moz-border-radius: 20px;
 		border-radius: 20px;
-		padding: 20px 30px;
 	}
 
 	.article-body {
-		 padding: 0 0 0 105px;
+		 padding: 0 0 0 15px;
 	}
 
 	.product-list .list article {
@@ -1058,15 +1053,15 @@ ol.bjqs-markers a:focus {
 		text-align: right;
 	}
 	.page-title {
-		padding-left: 30px;
 		font-size: 31px;
 	}
 }
 
 @media only screen and (min-width: 800px) {
 
-	.main-nav a {
-		margin-left: 25px;
+	.header {
+		text-align: left;
+		margin: 50px 0;
 	}
 
 	.wrap-page-title {
@@ -1082,9 +1077,23 @@ ol.bjqs-markers a:focus {
 
 @media only screen and (min-width: 1024px) {
 
+	.header {
+		/*padding-left: 235px;*/
+		margin: 100px 0;
+		text-align: left;
+	}
+
+	.main-nav a {
+		margin-left: 25px;
+	}
+
+	.inner {
+		padding: 0 40px;
+	}
+
 	.main-wrap {
-		margin-right: -435px;
-		padding-right: 435px;
+		margin-right: -300px;
+		padding-right: 300px;
 	}
 
 	.product-list .list .meta {
@@ -1103,3 +1112,18 @@ ol.bjqs-markers a:focus {
 		margin-top: 0;
 	}
 }
+
+@media only screen and (min-width: 1260px) {
+
+	.inner {
+		padding: 0 100px;
+	}
+	.page-title {
+		padding-left: 30px;
+	}
+
+	.home .main-wrap .article-body {
+		 padding: 0 0 0 80px;
+	}
+}
+
