@@ -202,7 +202,7 @@ figure  {
 }
 
 .main-nav a:hover,
-.main-nav a:focus {
+.main-nav a:focus, .main-nav .current_page_item a {
 	text-decoration: none;
 	color: #000;
 	border-bottom: solid 2px #EFCABE;
