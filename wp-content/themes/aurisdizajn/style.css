@@ -602,12 +602,6 @@ ol.bjqs-markers a:focus {
 	padding: 10px;
 }
 
-.product-list .list .product-title {
-	font-size: 13px;
-	letter-spacing: -0.2px;
-	float: left;
-}
-
 .product-list .list .product-title a {
 	overflow-x: hidden;
 	font-size: 18px;
@@ -629,9 +623,6 @@ ol.bjqs-markers a:focus {
 }
 
 .product-list .list .meta {
-	/*border-top: 1px solid #fff;
-	padding-top: 5px;
-	position: relative;*/
 	opacity: 0.4;
 }
 
@@ -1168,6 +1159,12 @@ ol.bjqs-markers a:focus {
 		padding-right: 300px;
 	}*/
 
+	.product-list .list .product-title {
+		font-size: 13px;
+		letter-spacing: -0.2px;
+		float: left;
+	}
+
 	.product-list .list .meta {
 		height: 25px;
 		float: right;
@@ -1190,9 +1187,6 @@ ol.bjqs-markers a:focus {
 	.inner {
 		padding: 0 100px;
 	}
-	/*.page-title {
-		padding-left: 30px;
-	}*/
 
 	.home .main-wrap .article-body {
 		 padding: 0 0 0 80px;
