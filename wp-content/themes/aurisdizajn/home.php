@@ -8,25 +8,27 @@
 			<div class="carousel" id="home-carousel">
 				<ul class="bjqs">
 					<li>
-						<img src="<?php echo get_template_directory_uri() ?>/photos/img1.jpg" width="685" height="420" alt="Auris Dizajn" />
+						<img src="<?php echo get_template_directory_uri() ?>/photos/img1.jpg" width="900" height="420" alt="Auris Dizajn" />
 					</li>
 					<li>
-						<img src="<?php echo get_template_directory_uri() ?>/photos/img2.jpg" width="685" height="420" alt="Auris Dizajn" />
+						<img src="<?php echo get_template_directory_uri() ?>/photos/img2.jpg" width="900" height="420" alt="Auris Dizajn" />
 					</li>
 					<li>
-						<img src="<?php echo get_template_directory_uri() ?>/photos/img3.jpg" width="685" height="420" alt="Auris dizajn" />
+						<img src="<?php echo get_template_directory_uri() ?>/photos/img3.jpg" width="900" height="420" alt="Auris dizajn" />
 					</li>
 					<li>
-						<img src="<?php echo get_template_directory_uri() ?>/photos/img4.jpg" width="685" height="420" alt="Auris dizajn" />
+						<img src="<?php echo get_template_directory_uri() ?>/photos/img4.jpg" width="900" height="420" alt="Auris dizajn" />
 					</li>
 					<li>
-						<img src="<?php echo get_template_directory_uri() ?>/photos/img5.jpg" width="685" height="420" alt="Auris dizajn" />
+						<img src="<?php echo get_template_directory_uri() ?>/photos/img5.jpg" width="900" height="420" alt="Auris dizajn" />
 					</li>
 				</ul>
 			</div>
-			<h1 class="page-title"><span class="first-letter" role="presentation" aria-hidden="true">P</span>Pozivnice La Linea</h1>
-			<div class="article-body">
-				<?php the_content(); ?>
+			<div class="main-text">
+				<h1 class="page-title"><span class="first-letter" role="presentation" aria-hidden="true">P</span>Pozivnice La Linea</h1>
+				<div class="article-body">
+					<?php the_content(); ?>
+				</div>
 			</div>
 		</article>
 		<?php endwhile; endif; ?>

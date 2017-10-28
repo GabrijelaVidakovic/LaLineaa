@@ -4,9 +4,28 @@
 	<main class="main" role="main">
 		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 		<article class="single-product">
-			<h1 class="page-title"><?php the_title(); ?></h1>
+			<div class="carousel" id="home-carousel">
+				<ul class="bjqs">
+					<li>
+						<img src="<?php echo get_template_directory_uri() ?>/photos/img1.jpg" width="900" height="420" alt="Auris Dizajn" />
+					</li>
+					<li>
+						<img src="<?php echo get_template_directory_uri() ?>/photos/img2.jpg" width="900" height="420" alt="Auris Dizajn" />
+					</li>
+					<li>
+						<img src="<?php echo get_template_directory_uri() ?>/photos/img3.jpg" width="900" height="420" alt="Auris dizajn" />
+					</li>
+					<li>
+						<img src="<?php echo get_template_directory_uri() ?>/photos/img4.jpg" width="900" height="420" alt="Auris dizajn" />
+					</li>
+					<li>
+						<img src="<?php echo get_template_directory_uri() ?>/photos/img5.jpg" width="900" height="420" alt="Auris dizajn" />
+					</li>
+				</ul>
+			</div>
+
 			<div class="product-body">
-				<?php the_content(); ?>
+				<h1 class="page-title"><span class="first-letter" role="presentation" aria-hidden="true">P</span><?php the_title(); ?></h1>
 				<?php
 					$product_price = get_post_meta($post->ID,'wpcf-price',TRUE);
 					$disable_order = get_post_meta($post->ID,'wpcf-disable-order',TRUE);
@@ -14,13 +33,17 @@
 				?>
 				<div class="meta cf">
 					<?php if( $product_price != '' ): ?>
-					<p class="price"><strong class="label">Cijena:</strong> <span class="amount"><?php echo $product_price ?> kn</span></p>
+					<div class="price-inner">
+						<p class="price"><strong class="label"></strong>
+							<span class="amount"><?php echo $product_price ?> kn</span><span class="piece"> /kom.</span></p>
+					</div>
 					<?php endif; ?>
 					<?php if ( !$disable_order ): ?>
 					<a href="<?php echo get_permalink( 39 ); ?>?proizvod=<?php echo $post->ID; ?>" class="button" title="<?php the_title(); ?>">Naručite uzorak</a>
 					<?php endif; ?>
 				</div>
 				<?php endif; ?>
+				<?php the_content(); ?>
 			</div>
 		</article>
 		<?php
@@ -58,7 +81,7 @@
 									$product_price = get_post_meta($post->ID,'wpcf-price',TRUE);
 									if( $product_price != '' ):
 								?>
-								<p class="price"><strong class="label">Cijena:</strong> <span class="amount"><?php echo $product_price ?> kn</span></p>
+								<p class="price"><strong class="label"></strong> <span class="amount"><?php echo $product_price ?> kn</span></p>
 								<?php endif; ?>
 								<!-- <a href="<?php the_permalink() ?>" class="button" title="<?php the_title(); ?>">Detalji</a> -->
 							</div>
