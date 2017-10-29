@@ -225,13 +225,16 @@ figure  {
 .main-nav a:focus,
 .main-nav .current_page_item a {
 	text-decoration: none;
-	color: #000;
 	border-bottom: solid 2px #EFCABE;
 }
 
 /*.main {
 	padding: 20px 20px 10px;
 }*/
+
+.home .main-text {
+	margin-top: 20px;
+}
 
 .carousel {
 	text-align: right;
@@ -405,9 +408,7 @@ ol.bjqs-markers a:focus {
 
 .cat-nav a:hover,
 .cat-nav a:focus,
-.cat-nav a:visited,
-.cat-nav a:active {
-	color: #000;
+.cat-nav .current-menu-item  {
 	text-decoration: none;
 	border-bottom: solid 2px #EFCABE;
 	width: max-content;
