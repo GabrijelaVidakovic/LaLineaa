@@ -44,6 +44,18 @@
 				</div>
 				<?php endif; ?>
 				<?php the_content(); ?>
+				<ul class="single-list">
+					<li class="single-item">Dimenzija <span>15X15 cm *</span></li>
+					<li class="single-item">Karton <span>280g/bijeli glatki</span></li>
+					<li class="single-item">Opcije <span>promjena boje</span></li>
+					<li class="single-item">Minimalna količina <span>35 komada</span></li>
+				</ul>
+
+				<div class="single-info">
+					<p>*obostrani tisak na kartončić</p>
+					<p>**(moguća je nadoplata za specijalne kartone sa pearl efektom 1,00 kn/kom)</p>
+				</div>
+
 			</div>
 		</article>
 		<?php
