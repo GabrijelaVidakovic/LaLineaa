@@ -12,15 +12,17 @@ jQuery(document).ready(function($) {
 
 	if ( $('#home-carousel').length ) {
 		$('#home-carousel').bjqs({
-			'height' : 432,
-			'width' : 705,
+			'height' : 542,
+			'width' : 900,
 			'animspeed' : 5000,
 			'showcontrols' : true,
 			'showmarkers' : false,
 			'centermarkers' : false,
 			'keyboardnav' : false,
 			'hoverpause' : false,
-			'responsive' : true
+			'responsive' : true,
+            'nexttext': "",
+            'prevtext': ""
 		});
 	}
 

@@ -24,6 +24,13 @@
 				</ul>
 			</div>
 
+			<div id="gallery-1" class="gallery galleryid-4700 gallery-columns-3 gallery-size-thumbnail"><dl class="gallery-item">
+			<dt class="gallery-icon landscape">
+				<a rel="group-4700" href="http://www.pozivnicelalinea.dev/wp-content/uploads/2017/04/naljepnice-za-vino-01g.gif"><img width="335" height="242" src="http://www.pozivnicelalinea.dev/wp-content/uploads/2017/04/naljepnice-za-vino-01g-335x242.gif" class="attachment-thumbnail size-thumbnail" alt=""></a>
+			</dt></dl>
+			<br style="clear: both">
+			</div>
+
 			<div class="product-body">
 				<h1 class="page-title"><span class="first-letter" role="presentation" aria-hidden="true">P</span><?php the_title(); ?></h1>
 				<?php

@@ -261,76 +261,47 @@ figure  {
 }
 
 .carousel .bjqs-controls {
-	-webkit-border-radius: 3px;
-	-moz-border-radius: 3px;
-	border-radius: 3px;
-	padding: 3px 5px;
 	position: absolute;
-	bottom: 10px;
-	right: 10px;
+	bottom: -25px;
+	right: 0;
 }
 
 .carousel .bjqs-prev,
 .carousel .bjqs-next {
-    content: '';
-    display: inline-block;
-    margin-top: 9px;
-    margin-left: 7px;
-    width: 15px;
-    height: 15px;
-    border-top: 3px solid #EFCABE;
-    border-right: 3px solid #EFCABE;
-}
-
-.carousel  .bjqs-prev {
-    -moz-transform: rotate(-135deg);
-    -webkit-transform: rotate(-135deg);
-    transform: rotate(-135deg);
-    margin: 7px 0 7px 7px;
-}
-
-.carousel .bjqs-next {
-    -moz-transform: rotate(45deg);
-  	-webkit-transform: rotate(45deg);
-  	transform: rotate(45deg);
-  	margin: 7px 7px 7px 0;
-}
-
-.bjqs-control {
-	width: 10px;
-	height: 10px;
-	padding: 2px;
-	height: 50px;
+	display: inline-block;
+    margin-right: 20px;
+	padding: 10px;
+	height: 30px;
     color: #EFCABE;
-    background: #D8D8D8;
     box-shadow: 0 2px 6px 0 rgba(0,0,0,0.50);
-    bottom:-35px;
-    width: 50px;
-    background: white;
+    width: 30px;
+    background: #fff;
     border-radius: 50%;
     text-align: center;
     cursor: pointer;
-	position: absolute;}
-
-ol.bjqs-markers li:first-child {
-	right: 100px;
+}
+.carousel .bjqs-prev a,
+.carousel .bjqs-next a {
+    content: '';
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-top: 2px solid #EFCABE;
+    border-right: 2px solid #EFCABE;
 }
 
-ol.bjqs-markers li:last-child {
-	right: 20px;
+.carousel  .bjqs-prev a {
+    -moz-transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+    margin: 7px -5px 0 0;
 }
 
-ol.bjqs-markers a {
-	display: block;
-	height: 10px;
-	overflow: hidden;
-	text-indent: -9999em;
-}
-
-ol.bjqs-markers li.active-marker a,
-ol.bjqs-markers a:hover,
-ol.bjqs-markers a:focus {
-	background-position: bottom left;
+.carousel .bjqs-next a {
+    -moz-transform: rotate(45deg);
+  	-webkit-transform: rotate(45deg);
+  	transform: rotate(45deg);
+  	margin: 7px 5px 0 0;
 }
 
 .article-body {
@@ -536,15 +507,16 @@ ol.bjqs-markers a:focus {
 	margin-top: 5px;
 }
 
-.product-body .gallery .gallery-item {
+ .gallery .gallery-item {
 	margin-top: 10px;
+	width: 25%;
 }
 
-.product-body .gallery .gallery-item:first-child {
+/* .gallery .gallery-item:first-child {
 	margin-top: 0;
-}
+}*/
 
-.product-body .gallery .gallery-item a {
+ .gallery .gallery-item a {
 	border: 2px solid #fff;
 	overflow: hidden;
 	display: block;
@@ -554,22 +526,22 @@ ol.bjqs-markers a:focus {
     box-shadow: 0 2px 6px 0 rgba(0,0,0,0.50);
 }
 
-.product-body .gallery .gallery-item a:hover,
+ .gallery .gallery-item a:hover,
 .gallery .gallery-item a:focus {
 	background-color: #a9a9a9;
 }
 
-.product-body .gallery .gallery-item img {
+ .gallery .gallery-item img {
 	display: block;
 	width: 100%;
 	height: auto;
 }
 
-.product-body .gallery br {
+ .gallery br {
 	display: none;
 }
 
-.product-body .gallery:after {
+ .gallery:after {
 	content: ".";
 	display: block;
 	height: 0;
@@ -577,11 +549,11 @@ ol.bjqs-markers a:focus {
 	clear: both;
 }
 
-* html .product-body .gallery { /* IE6 */
+* html  .gallery { /* IE6 */
 	height: 1%;
 }
 
-*:first-child+html .product-body .gallery { /* IE7 */
+*:first-child+html  .gallery { /* IE7 */
 	min-height: 1px;
 }
 
@@ -965,6 +937,10 @@ ol.bjqs-markers a:focus {
 	background: rgba(0, 0, 0, .8);
 }
 
+.product-body .gallery {
+	display: none;
+}
+
 /*Retina graphics!*/
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
 	   only screen and (min--moz-device-pixel-ratio: 1.5),
@@ -1023,6 +999,7 @@ ol.bjqs-markers a:focus {
 	margin-top: 15px;
 	padding-top: 15px;
 	padding-bottom: 10px;
+	display: none;
 }
 
 .bottom-pagination .wp-pagenavi {
@@ -1031,18 +1008,17 @@ ol.bjqs-markers a:focus {
 
 @media only screen and (min-width: 400px) {
 
-	.product-body .gallery {
+	 .gallery {
 		margin: -5px;
 		clear: both;
-		margin-bottom: 50px;
+		margin-bottom: 10px;
 	}
 
-	.product-body .gallery .gallery-item {
+	 .gallery .gallery-item {
 		float: left;
 		box-sizing: border-box;
 		margin-top: 0;
 		padding: 5px;
-		width: 50%;
 	}
 }
 
@@ -1074,8 +1050,15 @@ ol.bjqs-markers a:focus {
 		width: 33.33%;
 	}
 
-	.product-body .gallery .gallery-item {
-		width: 33.33%;
+	.gallery {
+		margin-bottom: 130px;
+	}
+
+	 .gallery .gallery-item {
+		width: 17%;
+		margin-top: -50px;
+	    margin-left: 80px;
+	    position: absolute;
 	}
 }
 
@@ -1090,6 +1073,7 @@ ol.bjqs-markers a:focus {
 		border-right: 2px solid #F9EAE5;
 		border-bottom: none;
 	}
+
 	.single-list {
 		display: flex;
 	}
@@ -1097,6 +1081,7 @@ ol.bjqs-markers a:focus {
 	.main-nav {
 		float: right;
 	}
+
 	.main-nav ul {
 		display: inline-block;
 		padding: 25px 0;
@@ -1104,12 +1089,11 @@ ol.bjqs-markers a:focus {
 
 	.main-wrap {
 		box-sizing: border-box;
-		/*margin-right: -220px;
-		padding-right: 220px;*/
 		float: right;
 		width: 70%;
 		max-width: 900px;
 	}
+
 	.main-text {
 		max-width: 680px;
 	    margin: 0 auto;
@@ -1119,6 +1103,7 @@ ol.bjqs-markers a:focus {
 	.home .main-text {
 		margin-top: 50px;
 	}
+
 	.sidebar {
 		float: left;
 		margin-top: 0;
@@ -1156,7 +1141,7 @@ ol.bjqs-markers a:focus {
 	}
 
 	.top-pagination {
-		display: block;
+		/*display: block;*/
 		margin-top: 10px;
 	}
 
@@ -1174,18 +1159,20 @@ ol.bjqs-markers a:focus {
 	.footer {
 		text-align: right;
 	}
+
 	.page-title {
 		font-size: 31px;
-/*		margin-left: -75px;
-*/    	font-family: OldStandardTT-Regular;
+    	font-family: OldStandardTT-Regular;
 	}
 
 	.first-letter {
 		font-size: 120px;
 	}
+
 	.single-product .product-body .price-inner {
 		float: right;
 	}
+
 	.single-product .page-title {
 		float: left;
 	}
@@ -1213,7 +1200,6 @@ ol.bjqs-markers a:focus {
 @media only screen and (min-width: 1024px) {
 
 	.header {
-		/*padding-left: 235px;*/
 		margin: 100px 0;
 		text-align: left;
 	}
@@ -1226,10 +1212,6 @@ ol.bjqs-markers a:focus {
 		padding: 0 40px;
 	}
 
-	/*.main-wrap {
-		margin-right: -300px;
-		padding-right: 300px;
-	}*/
 
 	.product-list .list .product-title {
 		font-size: 13px;
